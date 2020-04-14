@@ -10,7 +10,8 @@ run_path = "../cmake/osxbundle/obslaunch.sh"
 blacklist = """/usr /System""".split()
 
 #copied
-whitelist = """/usr/local""".split()
+whitelist = [subprocess.check_output(
+		["brew", "--prefix"], universal_newlines=True).strip()]
 
 #
 #
