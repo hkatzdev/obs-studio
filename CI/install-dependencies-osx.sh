@@ -35,7 +35,7 @@ brew install https://gist.githubusercontent.com/DDRBoxman/4cada55c51803a2f963fa4
 
 pip install dmgbuild
 
-export PATH=/usr/local/opt/ccache/libexec:$PATH
+export PATH="$(brew --prefix)/opt/ccache/libexec:$PATH"
 ccache -s || echo "CCache is not available."
 
 # Fetch and untar prebuilt OBS deps that are compatible with older versions of OSX
