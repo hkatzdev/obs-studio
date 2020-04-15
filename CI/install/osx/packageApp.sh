@@ -41,7 +41,8 @@ cp ../CI/install/osx/Info.plist ./OBS.app/Contents
 -x ./OBS.app/Contents/MacOS/_obspython.so \
 -x ./OBS.app/Contents/PlugIns/obs-x264.so \
 -x ./OBS.app/Contents/PlugIns/text-freetype2.so \
--x ./OBS.app/Contents/PlugIns/obs-libfdk.so
+-x ./OBS.app/Contents/PlugIns/obs-libfdk.so \
+-x ./OBS.app/Contents/PlugIns/obs-mac-virtualcam.so
 # -x ./OBS.app/Contents/PlugIns/obs-outputs.so \
 
 "$(brew --prefix)/Cellar/qt/5.14.1/bin/macdeployqt" ./OBS.app
