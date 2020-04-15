@@ -18,7 +18,7 @@ if ! exists nasm; then
     exit
 fi
 
-CURDIR=$(pwd)
+CURDIR="$(pwd)"
 
 # the temp directory
 WORK_DIR=`mktemp -d`
@@ -158,4 +158,4 @@ cd $WORK_DIR
 
 tar -czf osx-deps.tar.gz obsdeps
 
-cp ./osx-deps.tar.gz $CURDIR
+cp ./osx-deps.tar.gz "$CURDIR"
